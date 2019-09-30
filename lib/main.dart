@@ -13,12 +13,10 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-
           title: Center(
             child: Text('I Love Flutter'),
           ),
           backgroundColor: Colors.lightBlue,
-
           actions: <Widget>[
             new IconButton(
               icon: new Icon(Icons.search),
@@ -26,26 +24,23 @@ void main() {
             ),
           ],
           leading: Image(
-            image: NetworkImage ('https://mclarencollege.in/images/icon.png'),
+            image: NetworkImage('https://mclarencollege.in/images/icon.png'),
           ),
         ),
         body: Center(
           child: Image(
             image: NetworkImage(
-                'https://mclarencollege.in/images/9fc76a72-5b06-432f-b92e-d41d8ad5629f.jpg'
-            ),
+                'https://mclarencollege.in/images/9fc76a72-5b06-432f-b92e-d41d8ad5629f.jpg'),
           ),
-
         ),
-        /*floatingActionButton: FloatingActionButton(
-          child: Image (
-              image : NetworkImage ('https://mclarencollege.in/images/icon.png'
-          ),
+        floatingActionButton: FloatingActionButton(
+          child: Image(
+            image: NetworkImage('https://mclarencollege.in/images/icon.png'),
           ),
           onPressed: () {
             print("Ta TA Ta TA!");
           },
-        ),*/
+        ),
       ),
     ),
   );
